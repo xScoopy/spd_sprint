@@ -12,5 +12,10 @@ def profile():
     """defining profile page route"""
     return render_template('my_profile.html')
 
+@app.route('/find_tools')
+def find_tools():
+    """defining find tools route"""
+    return render_template('find_tools.html') 
+
 if __name__ == '__main__':
     app.run()
