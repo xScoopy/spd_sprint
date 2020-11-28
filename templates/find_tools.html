@@ -13,4 +13,187 @@
         </div>
     </form>
 </div>
-{% endblock %}
+<div class="container">
+    <h1>Categories</h1>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center mr-auto">
+            <img class="rounded mx-auto d-block img-thumbnail"
+                src={{ url_for('static', filename = 'images/yardwork.jpeg') }} alt="yardwork photo">
+                <button class="btn-primary p-3" data-toggle="modal" data-target="#YardModal">Yardwork</button>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <img class="rounded mx-auto d-block img-thumbnail"
+                src={{ url_for('static', filename = 'images/tools.jpeg') }} alt="small tools photo">
+            <button class="btn-primary p-3" data-toggle="modal" data-target="#ToolsModal">Small Tools</button>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 text-center ml-auto">
+            <img class="rounded mx-auto d-block img-thumbnail"
+                src={{ url_for('static', filename = 'images/woodworking.jpeg') }} alt="woodworking">
+            <button class="btn-primary p-3" data-toggle="modal" data-target="#WoodModal">Woodworking</button>
+        </div>
+    </div>
+</div>
+<!-- Modal code from the bootstrap website, then modified to work with my content -->
+<!-- Tool Modal -->
+<div class="modal fade" id="ToolsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Small Tools near you: </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="card col-lg-6 col-sm-12 col-md-6">
+                            <img class="card-img-top" src={{ url_for('static', filename = 'images/Review_one.jpeg') }}
+                                alt="tools lender">
+                            <div class="card-body">
+                                <p class="card-text">Offering: Screwdrivers and hammers of all sizes.
+                                </p>
+                                <h5>User Rating:</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <a href="#" class="text-center">Contact Me</a>
+                        </div>
+                        <div class="card col-lg-6 col-sm-12 col-md-6">
+                            <img class="card-img-top" src={{ url_for('static', filename = 'images/Review_one.jpeg') }}
+                                alt="tools lender">
+                            <div class="card-body">
+                                <p class="card-text">Offering: Wrenches
+                                </p>
+                                <h5>User Rating:</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <a href="#" class="text-center">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Woodworking Modal -->
+<div class="modal fade" id="WoodModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Small Tools near you: </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="card col-lg-6 col-sm-12 col-md-6">
+                            <img class="card-img-top" src={{ url_for('static', filename = 'images/woodworking.jpeg') }}
+                                alt="woodworking photo">
+                            <div class="card-body">
+                                <p class="card-text">Offering: Use of bandsaw w/supervision
+                                </p>
+                                <h5>User Rating:</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <a href="#" class="text-center">Contact Me</a>
+                        </div>
+                        <div class="card col-lg-6 col-sm-12 col-md-6">
+                            <img class="card-img-top" src={{ url_for('static', filename = 'images/woodworking.jpeg') }}
+                                alt="woodworking photo">
+                            <div class="card-body">
+                                <p class="card-text">Offering: handsaws
+                                </p>
+                                <h5>User Rating:</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <a href="#" class="text-center">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Yardwork Modal -->
+<div class="modal fade" id="YardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Small Tools near you: </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="card col-lg-6 col-sm-12 col-md-6">
+                            <img class="card-img-top" src={{ url_for('static', filename = 'images/yardwork.jpeg') }}
+                                alt="yardwork photo">
+                            <div class="card-body">
+                                <p class="card-text">Offering: push mower
+                                </p>
+                                <h5>User Rating:</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <a href="#" class="text-center">Contact Me</a>
+                        </div>
+                        <div class="card col-lg-6 col-sm-12 col-md-6">
+                            <img class="card-img-top" src={{ url_for('static', filename = 'images/yardwork.jpeg') }}
+                                alt="yardwork photo">
+                            <div class="card-body">
+                                <p class="card-text">Offering: weedwhip
+                                </p>
+                                <h5>User Rating:</h5>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <a href="#" class="text-center">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        {% endblock %}
