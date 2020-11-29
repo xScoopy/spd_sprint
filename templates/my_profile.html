@@ -1,4 +1,45 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<h1 class="text-center mt-5 mb-5">My Profile</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-sm-12">
+            <img class="rounded-circle img-thumbnail" src={{ url_for('static', filename = 'images/profile_photo.jpg') }}
+                alt="profile picture">
+            <!-- New photo upload -->
+            <p>Change Photo</p>
+            <form action="GET">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="photo_upload">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                            aria-describedby="photo_upload">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <h4 class="text-center">My Offered Tools</h4>
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action">Screwdrivers</button>
+                <button type="button" class="list-group-item list-group-item-action">Hammers</button>
+                <button type="button" class="list-group-item list-group-item-action">Lawn Mower</button>
+                <button type="button" class="list-group-item list-group-item-action">Moving Dolly</button>
+                <button type="button" class="list-group-item list-group-item-action">Handsaw</button>
+            </div>
+            <button class="btn-dark">Add a Tool</button>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <h4 class="text-center">My Borrow History</h4>
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action">Weedwhip from <a href="#">Dave</a><p class="text-success">returned</p></button>
+                <button type="button" class="list-group-item list-group-item-action">Extension cord from <a href="#">Sally</a><p class="text-success">returned</p></button>
+                <button type="button" class="list-group-item list-group-item-action">Space Heater from <a href="#">Willis</a><p class="text-danger">not returned</p></button>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
