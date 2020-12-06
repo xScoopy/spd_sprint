@@ -1,0 +1,50 @@
+.navbar {
+    background-color: rgb(255, 215, 71);
+    color: rgb(172,71,255);
+}
+.nav-item {
+    color:rgb(172,71,255);
+}
+.list-group-item {
+    color: rgb(255, 215, 71);
+}
+.footer{
+    color: rgb(255, 215, 71);
+    margin-top: 10em;
+}
+.footer-link{
+    color: rgb(255, 215, 71);
+}
+a.list-group-item:hover{
+    color:rgb(172,71,255);
+}
+.nav-link{
+    color:rgb(172,71,255);
+}
+.profile-section{
+    border-color: rgb(172,71,255);
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+}
+.jumbo-button {
+    background-color: rgb(255, 215, 71) !important;
+    color: rgb(172,71,255) !important;
+}
+.jumbotron {
+    background-image: url(../images/tools_bg.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+.display-3 {
+    display: table-cell;
+    margin: auto;
+    box-shadow: seashell;
+    margin-bottom: 3em;
+}
+.find_tool_button{
+    background-color: rgb(255, 215, 71);
+    color: rgb(172,71,255);
+    box-shadow: slategray;
+    margin-top: 1em;
+}

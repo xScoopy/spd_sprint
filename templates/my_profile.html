@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1 class="text-center mt-5 mb-5">My Profile</h1>
-<div class="container">
+<div class="container mb-5">
     <div class="row">
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-4 col-sm-12 profile-section">
             <img class="rounded-circle img-thumbnail" src={{ url_for('static', filename = 'images/profile_photo.jpg') }}
                 alt="profile picture">
             <!-- New photo upload -->
@@ -21,7 +21,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-4 col-sm-12 profile-section">
             <h4 class="text-center">My Offered Tools</h4>
             <div class="list-group">
                 <button type="button" class="list-group-item list-group-item-action">Screwdrivers</button>
@@ -32,7 +32,7 @@
             </div>
             <button class="btn-dark">Add a Tool</button>
         </div>
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-4 col-sm-12 profile-section">
             <h4 class="text-center">My Borrow History</h4>
             <div class="list-group">
                 <button type="button" class="list-group-item list-group-item-action">Weedwhip from <a href="#">Dave</a><p class="text-success">returned</p></button>
